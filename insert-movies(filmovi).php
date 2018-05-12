@@ -8,6 +8,7 @@
         $sql = "INSERT INTO filmovi (naslov, godina) VALUES ('$naziv', '$godina')";
         if(mysqli_query($db, $sql)){
             echo "Uspješno. " .$_POST['naziv'] ." ". "(".$_POST['godina'] .")<br>";
+            echo 'ID: '.$db->insert_id;
 
             $sql = "INSERT INTO svi_filmovi (naslov, godina) VALUES ('$naziv', '$godina')";
             if(mysqli_query($db, $sql)){
@@ -48,18 +49,6 @@
                 <td><input type="submit" name="input_btn" value="Unesi"></td>
             </tr>
         </table>
-        <?php
-            $db = mysqli_connect("localhost", "root", "", "filmovi");
-            $query = $db->query("SELECT * FROM zanrovi ORDER BY naziv_zanr ASC");
-            $rowCount = $query->num_rows;
-            if($rowCount > 0) {
-                while($row = $query->fetch_assoc()){
-                    echo '<input type="checkbox" value="'.$row['id_zanr'].'">'.$row['naziv_zanr'].'</br>';
-                }
-            } else {
-                echo '<input type="checkbox" value="">Nije dostupno';
-            }
-        ?>
     </form>
 </body>
 </html>

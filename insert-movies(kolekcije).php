@@ -16,7 +16,7 @@
             } else {
                 echo "Neuspješno".mysqli_error($db);
             }
-        } elseif (empty($_POST['naziv']) OR empty($_POST['godina'])) {
+        } else if (empty($_POST['naziv']) OR empty($_POST['godina'])) {
             echo "Naziv i godina ne mogu biti prazni!";
         } else {
             echo "Neuspješno!";
@@ -48,18 +48,6 @@
                 <td><input type="submit" name="input_btn" value="Unesi"></td>
             </tr>
         </table>
-        <?php
-            $db = mysqli_connect("localhost", "root", "", "filmovi");
-            $query = $db->query("SELECT * FROM zanrovi ORDER BY naziv_zanr ASC");
-            $rowCount = $query->num_rows;
-            if($rowCount > 0) {
-                while($row = $query->fetch_assoc()){
-                    echo '<input type="checkbox" value="'.$row['id_zanr'].'">'.$row['naziv_zanr'].'</br>';
-                }
-            } else {
-                echo '<input type="checkbox" value="">Nije dostupno';
-            }
-        ?>
     </form>
 </body>
 </html>

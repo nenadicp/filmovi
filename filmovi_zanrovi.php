@@ -14,11 +14,12 @@
     <select name="film" id="film">
         <?php
             $db = mysqli_connect("localhost", "root", "", "filmovi");
-            $sql = $db->query("SELECT * FROM svi_filmovi");
+            $sql = $db->query("SELECT t1.* FROM svi_filmovi t1 LEFT JOIN film_zanr t2
+                ON t1.id_film = t2.id_film WHERE t2.id_film IS NULL");
             $rowCount = $sql->num_rows;
             if($rowCount > 0){
                 while($row = $sql->fetch_assoc()){
-                    echo '<option value="'.$row['id_film'].'">'.$row['naslov']." (".$row['godina'].')'.$row['id_film'].'</option>';
+                    echo '<option value="'.$row['id_film'].'">'.$row['naslov']." (".$row['godina'].') '.$row['id_film'].'</option>';
                 }
             } else {
                 echo '<option value="">Nije dostupno</option>';
@@ -32,7 +33,7 @@
             $rowCount = $sql->num_rows;
             if($rowCount > 0){
                 while($row = $sql->fetch_assoc()){
-                    echo '<option value="'.$row['id_zanr'].'">'.$row['naziv_zanr']." ".$row['id_zanr'].'</option>';
+                    echo '<option value="'.$row['id_zanr'].'">'.$row['naziv_zanr'].'</option>';
                 }
             } else {
                 echo '<option value="">Nije dostupno</option>';
