@@ -8,6 +8,7 @@
         $sql = "INSERT INTO kolekcije (naslov, godina) VALUES ('$naziv', '$godina')";
         if(mysqli_query($db, $sql)){
             echo "Uspješno. " .$_POST['naziv'] ." ". "(".$_POST['godina'] .")<br>";
+            echo 'ID: '.$db->insert_id;
 
             $sql = "INSERT INTO svi_filmovi (naslov, godina) VALUES ('$naziv', '$godina')";
             if(mysqli_query($db, $sql)){
