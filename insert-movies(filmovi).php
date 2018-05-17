@@ -36,7 +36,8 @@
         <a href="unos_filmova.php">Natrag</a>
     </p>
     <form method="post" action="insert-movies(filmovi).php">
-        <table>
+        <p style="height: 100px;"></p>
+        <table align="center">
             <tr>
                 <td>Naziv filma:</td>
                 <td><input type="text" name="naziv" id="naziv"></td>

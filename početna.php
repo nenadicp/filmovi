@@ -96,7 +96,7 @@
                     }
                 ?>
             </h5>
-            <h5 align="right">Animirani:
+            <h5 align="right"><a href="animirani.php" target="_blank">Animirani:</a>
                 <?php
                     if($result = $db->query("SELECT * FROM animirani")) {
                         $rowCount =$result->num_rows;
@@ -105,7 +105,7 @@
                     }
                 ?>
             </h5>
-            <h5 align="right">Filmovi:
+            <h5 align="right"><a href="filmovi.php" target="_blank">Filmovi:</a>
                 <?php
                     if($result = $db->query("SELECT * FROM filmovi")) {
                         $rowCount2 = $result->num_rows;
@@ -114,7 +114,7 @@
                     }
                 ?>
             </h5>
-            <h5 align="right">Kolekcije:
+            <h5 align="right"><a href="kolekcije.php" target="_blank">Kolekcije:</a>
                 <?php
                     if($result = $db->query("SELECT * FROM kolekcije")) {
                         $rowCount3 =$result->num_rows;
