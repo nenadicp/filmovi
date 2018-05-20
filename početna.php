@@ -79,6 +79,7 @@
     <div class="novi_filmovi">
         <p>
             <h4>Novi filmovi: <a href="login.php" target="_blank">Prijavi se(admin)</a></h4>
+            <h4 class="zanrovi2"><a href="zanrovi2.php">Žanrovi</a></h4>
         </p>
     </div>
     <div class="broj">
@@ -186,11 +187,7 @@
     <br>
     <br>
     <br>
-    <p>
-        <h1>Ne zaboravi pogledati u božićne filmove za zapisati kada dođeš kući!!!</h1>
-    </p>
     <br>
-    <h4 class="zanrovi2"><a href="zanrovi2.php">Žanrovi</a></h4>
     <footer style="display:none">
     </footer>
 </body>
