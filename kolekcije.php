@@ -4,7 +4,29 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Kolekcije</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        $(document).ready(function(){
+            $(document).on('click', "#izbrisi", function(){
+                var kolekcije = $("#kolekcije").val();
+                var data = {'kolekcije': kolekcije};
+                $.ajax({
+                    data: data,
+                    type: 'post',
+                    url: 'izbrisi_kolekcije.php',
+                    success: function(data) {
+                        swal(data, "Film iz kolekcija je izbrisan.", "success");
+                    },
+                    complete: function(data) {
+                        console.log("Poruka: " + data);
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <select name="kolekcije" id="kolekcije">
@@ -23,8 +45,7 @@
         ?>
     </select>
     <p>
-        <input type="button" value="Izbriši">
-        <input type="button" value="Premjesti">
+        <input type="button" name="izbrisi" id="izbrisi" value="Izbriši">
     </p>
 </body>
 </html>

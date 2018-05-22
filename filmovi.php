@@ -46,11 +46,7 @@
         ?>
     </select>
     <p>
-        <input type="button" id="izbrisi" name="izbrisi" value="Izbriši">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="button" id="premjesti" name="premjesti" value="Premjesti"></br>
-        </br>
-        <input type="checkbox">Kolekcije
-        <input type="checkbox">Animirani
+        <input type="button" id="izbrisi" name="izbrisi" value="Izbriši">
     </p>
 </body>
 </html>
