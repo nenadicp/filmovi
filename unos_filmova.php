@@ -34,12 +34,25 @@
     <br>
     <br>
     <br>
-    <br>
+    <p>
+        <h3>Unos filmova</h3>
+    </p>
     <a class="linkovi" href="insert-movies(animirani).php">ANIMIRANI</a>
     <br><br>
     <a class="linkovi" href="insert-movies(filmovi).php">FILMOVI</a>
     <br><br>
     <a class="linkovi" href="insert-movies(kolekcije).php">KOLEKCIJE</a>
     <br><br>
+    <br><br>
+    <br><br>
+    <p>
+        <h3>Brisanje filmova</h3>
+    </p>
+    <a class="linkovi" href="animirani.php" target="_blank">Animirani</a>
+    <br><br>
+    <a class="linkovi" href="filmovi.php" target="_blank">Filmovi</a>
+    <br><br>
+    <a class="linkovi" href="kolekcije.php" target="_blank">Kolekcije</a>
+
 </body>
 </html>
