@@ -19,7 +19,7 @@
                     url: "izbrisi_animirani.php",
                     success: function(data){
                         swal(data, "Animirani film je izbrisan.", "success");
-                        location.reload(true);
+                        location.reload();
                     },
                     complete: function(data) {
                         console.log("Poruka: " + data);

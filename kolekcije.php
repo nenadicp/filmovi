@@ -19,6 +19,7 @@
                     url: 'izbrisi_kolekcije.php',
                     success: function(data) {
                         swal(data, "Film iz kolekcija je izbrisan.", "success");
+                        location.reload();
                     },
                     complete: function(data) {
                         console.log("Poruka: " + data);
