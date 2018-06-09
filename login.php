@@ -52,6 +52,14 @@
             height: 25px;
             width: 90px;
         }
+
+        .button2 {
+            height: 31px;
+            width: auto;
+            border-radius: 3px;
+            padding-top: 4px;
+            padding-bottom: 2px;
+        }
     </style>
 </head>
 <body>
@@ -75,7 +83,7 @@
                 <td>Lozinka:</td>
                 <td><input class="unos" type="password" name="password" id="password" placeholder="Unesite lozinku">
                 &nbsp;&nbsp;
-                <input type="checkbox" onclick="myFunction()">Prikaži lozinku</td>
+                <input class="button2" type="button" value="Prikaži/sakrij lozinku" onclick="myFunction()"></td>
             </tr>
             <tr style="height: 20px;"></tr>
             <tr></tr>

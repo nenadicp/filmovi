@@ -19,7 +19,9 @@
                     url: "izbrisi_animirani.php",
                     success: function(data){
                         swal(data, "Animirani film je izbrisan.", "success");
-                        location.reload();
+                        setTimeout(() => {
+                            location.reload();
+                        }, 4000);
                     },
                     complete: function(data) {
                         console.log("Poruka: " + data);
@@ -38,7 +40,7 @@
             $rowCount = $query->num_rows;
             if($rowCount > 0){
                 while($row = $query->fetch_assoc()){
-                    echo '<option value="'.$row['id_film'].'">'.$row['naslov'].'</option>';
+                    echo '<option value="'.$row['id_film'].'">'.$row['naslov'].' ('.$row['godina'].')</option>';
                 }
             } else {
                 echo '<option value="">Nije dostupno</option>';

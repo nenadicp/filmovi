@@ -21,7 +21,7 @@
         } else if (empty($_POST['naziv']) OR empty($_POST['godina'])) {
             echo "Naziv i godina ne mogu biti prazni!";
         } else {
-            echo "Neuspješno!";
+            echo "Neuspješno!".mysqli_error($db);
         }
     }
 ?>
@@ -34,6 +34,34 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src="javascript/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: #b3ffff;
+        }
+
+        .text {
+            font-size: 19px;
+            border-radius: 5px;
+        }
+
+        .submit {
+            height: 30px;
+            width: 60px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: green;
+            text-decoration: underline;
+            font-size: 20px;
+        }
+
+    </style>
 </head>
 <body>
     <p>
