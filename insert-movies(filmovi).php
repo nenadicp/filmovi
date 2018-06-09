@@ -68,19 +68,21 @@
         <a href="unos_filmova.php">Natrag</a>
     </p>
     <form method="post" action="insert-movies(filmovi).php">
-        <p style="height: 100px;"></p>
+        <p style="height: 150px;"></p>
         <table align="center">
             <tr>
-                <td>Naziv filma:</td>
-                <td><input type="text" name="naziv" id="naziv"></td>
+                <td style="font-size: 19px;">Naziv filma:</td>
+                <td><input class="text" type="text" name="naziv" id="naziv"></td>
             </tr>
+            <tr style="height: 15px;"></tr>
             <tr>
-                <td>Godina:</td>
-                <td><input type="text" name="godina" id="godina"></td>
+                <td style="font-size: 19px;">Godina:</td>
+                <td><input class="text" type="text" name="godina" id="godina"></td>
             </tr>
+            <tr style="height: 15px;"></tr>
             <tr>
                 <td></td>
-                <td><input type="submit" name="input_btn" value="Unesi"></td>
+                <td><input class="submit" type="submit" name="input_btn" value="Unesi"></td>
             </tr>
         </table>
     </form>

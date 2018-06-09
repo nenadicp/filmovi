@@ -68,7 +68,7 @@
         <a href="unos_filmova.php">Natrag</a>
     </p>
     <form method="post" action="insert-movies(animirani).php">
-    <p style="height: 150px;"></p>
+        <p style="height: 150px;"></p>
         <table align="center">
             <tr>
                 <td style="font-size: 19px;">Naziv filma:</td>
