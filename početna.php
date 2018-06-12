@@ -131,7 +131,7 @@
     <br>
     <div class="pretrazi" align="center">
         <p>
-            <input type="text" name="pretrazi" id="pretrazi" placeholder="Unesite naziv filma">
+            <input type="text" name="pretrazi" id="pretrazi" placeholder="Unesite naziv filma" align="center">
         </p>
     </div>
     <table border="0" align="center" style="display:none">

@@ -15,11 +15,11 @@
         <?php
             $db = mysqli_connect("localhost", "root", "", "filmovi");
             $sql = $db->query("SELECT * FROM svi_filmovi t1 LEFT JOIN film_zanr t2
-                ON t1.id_film = t2.id_film WHERE t2.id_film IS NULL");
+                ON t1.naslov = t2.naslov WHERE (t2.naslov IS NULL)");
             $rowCount = $sql->num_rows;
             if($rowCount > 0){
                 while($row = $sql->fetch_assoc()){
-                    echo '<option value="'.$row['id_film'].'">'.$row['naslov']." (".$row['godina'].') '.$row['id_film'].'</option>';
+                    echo '<option value="'.$row['naslov'].'">'.$row['naslov']." (".$row['godina'].') '.$row['id_film'].'</option>';
                 }
             } else {
                 echo '<option value="">Nije dostupno</option>';
