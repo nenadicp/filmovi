@@ -1,3 +1,9 @@
+<?php
+    $db = mysqli_connect("localhost", "root", "", "filmovi");
+    $query = $db->query("SELECT * FROM kolekcije ORDER BY naslov ASC");
+    $rowCount = $query->num_rows;
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,6 +38,15 @@
     </script>
 </head>
 <body>
+    <h4>Filmovi:
+        <?php
+            if($result = $db->query("SELECT * FROM kolekcije")) {
+                $rowCount2 = $result->num_rows;
+
+                echo '', $rowCount2;
+            }
+        ?>
+    </h4>
     <select name="kolekcije" id="kolekcije">
         <?php
             $db = mysqli_connect("localhost", "root", "", "filmovi");
