@@ -53,6 +53,17 @@
     <a class="linkovi" href="filmovi.php" target="_blank">Filmovi</a>
     <br><br>
     <a class="linkovi" href="kolekcije.php" target="_blank">Kolekcije</a>
+    <br><br>
+    <br><br>
+    <br><br>
+    <p>
+        <h3>Izmjena filmova</h3>
+    </p>
+    <a class="linkovi" href="animirani_izmjena.php">Animirani</a>
+    <br><br>
+    <a class="linkovi" href="filmovi_izmjena.php">Filmovi</a>
+    <br><br>
+    <a class="linkovi" href="kolekcije_izmjena.php">Kolekcije</a>
 
 </body>
 </html>
