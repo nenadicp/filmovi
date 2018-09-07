@@ -48,11 +48,11 @@
     <p>
         <h3>Brisanje filmova</h3>
     </p>
-    <a class="linkovi" href="animirani.php" target="_blank">Animirani</a>
+    <a class="linkovi" href="animirani.php">Animirani</a>
     <br><br>
-    <a class="linkovi" href="filmovi.php" target="_blank">Filmovi</a>
+    <a class="linkovi" href="filmovi.php">Filmovi</a>
     <br><br>
-    <a class="linkovi" href="kolekcije.php" target="_blank">Kolekcije</a>
+    <a class="linkovi" href="kolekcije.php">Kolekcije</a>
     <br><br>
     <br><br>
     <br><br>

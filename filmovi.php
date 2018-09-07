@@ -47,6 +47,9 @@
             }
         ?>
     </h4>
+    <p>
+        <a href="unos_filmova.php">Natrag</a>
+    </p>
     <select name="filmovi" id="filmovi">
         <?php
             $db = mysqli_connect("localhost", "root", "", "filmovi");

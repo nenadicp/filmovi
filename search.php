@@ -3,7 +3,7 @@
 
     $searchTerm = $_GET['term'];
     $query = $db->query("SELECT * FROM svi_filmovi
-    WHERE naslov LIKE '%".$searchTerm."%' ORDER BY naslov ASC");
+    WHERE naslov LIKE '%".$searchTerm."%' OR godina LIKE '%".$searchTerm."%' ORDER BY naslov ASC");
 
     while($row = $query->fetch_assoc()) {
         $data[] = $row['naslov']." (".$row['godina'].')';

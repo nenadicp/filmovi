@@ -10,6 +10,9 @@
     <title>Filmovi-žanrovi</title>
 </head>
 <body>
+    <p>
+        <a href="unos_filmova.php">Natrag</a>
+    </p>
     <br>
     <select name="film" id="film">
         <?php

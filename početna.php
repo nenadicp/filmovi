@@ -78,7 +78,7 @@
     <br>
     <div class="novi_filmovi">
         <p>
-            <h4>Novi filmovi: <a href="login.php" target="_blank">Prijavi se(admin)</a></h4>
+            <h4>Novi filmovi: <a href="unos_filmova.php" target="_blank">Unos filmova</a></h4>
             <h4 class="zanrovi2"><a href="zanrovi2.php">Žanrovi</a></h4>
         </p>
     </div>
